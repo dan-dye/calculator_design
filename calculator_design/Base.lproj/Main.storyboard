@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_3" orientation="landscape" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,20 +12,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calculator_design" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="874" height="402"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="S46-5y-TKa" userLabel="MainContainer">
-                                <rect key="frame" x="62" y="0.0" width="750" height="381"/>
+                                <rect key="frame" x="0.0" y="59" width="430" height="839"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0OU-NQ-QQq" userLabel="DisplayContainer">
-                                        <rect key="frame" x="0.0" y="0.0" width="750" height="150"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="150"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQZ-mS-HhS" userLabel="EquationView">
-                                                <rect key="frame" x="0.0" y="0.0" width="750" height="75"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="430" height="75"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13X20=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifC-tG-KfD" userLabel="Label1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="700" height="75"/>
+                                                        <rect key="frame" x="296" y="0.0" width="84" height="75"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -33,17 +33,17 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="ifC-tG-KfD" firstAttribute="leading" secondItem="BQZ-mS-HhS" secondAttribute="leading" id="3Bv-sl-yUa"/>
+                                                    <constraint firstItem="ifC-tG-KfD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BQZ-mS-HhS" secondAttribute="leading" id="3Bv-sl-yUa"/>
                                                     <constraint firstItem="ifC-tG-KfD" firstAttribute="top" secondItem="BQZ-mS-HhS" secondAttribute="top" id="5Fd-Mf-Qru"/>
                                                     <constraint firstAttribute="bottom" secondItem="ifC-tG-KfD" secondAttribute="bottom" id="K2b-8m-tsu"/>
                                                     <constraint firstAttribute="trailing" secondItem="ifC-tG-KfD" secondAttribute="trailing" constant="50" id="dta-vh-WUp"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQX-un-I0I" userLabel="ResultView">
-                                                <rect key="frame" x="0.0" y="75" width="750" height="75"/>
+                                                <rect key="frame" x="0.0" y="75" width="430" height="75"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="260" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsf-e0-1t4" userLabel="Label2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="700" height="75"/>
+                                                        <rect key="frame" x="307" y="0.0" width="73" height="75"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -51,7 +51,7 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="Hsf-e0-1t4" firstAttribute="leading" secondItem="HQX-un-I0I" secondAttribute="leading" id="AB3-M0-Y55"/>
+                                                    <constraint firstItem="Hsf-e0-1t4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HQX-un-I0I" secondAttribute="leading" id="AB3-M0-Y55"/>
                                                     <constraint firstItem="Hsf-e0-1t4" firstAttribute="top" secondItem="HQX-un-I0I" secondAttribute="top" id="F19-IX-1O9"/>
                                                     <constraint firstAttribute="bottom" secondItem="Hsf-e0-1t4" secondAttribute="bottom" id="cIo-Su-CrH"/>
                                                     <constraint firstAttribute="trailing" secondItem="Hsf-e0-1t4" secondAttribute="trailing" constant="50" id="rIf-zX-iEI"/>
@@ -63,266 +63,266 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Oef-Sb-VVI" userLabel="Buttons">
-                                        <rect key="frame" x="0.0" y="150" width="750" height="231"/>
+                                        <rect key="frame" x="0.0" y="150" width="430" height="689"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ALc-ay-N3D" userLabel="ButtonRow1">
-                                                <rect key="frame" x="0.0" y="0.0" width="750" height="46.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="430" height="137.66666666666666"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjK-uV-S1s">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="46.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="137.66666666666666"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="AC">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
                                                                 <color key="backgroundColor" red="0.91976243257522583" green="0.415333381497825" blue="0.31066535532105305" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9c-2v-b3H">
-                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="46.333333333333336"/>
+                                                        <rect key="frame" x="107.66666666666669" y="0.0" width="107.33333333333331" height="137.66666666666666"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="+/-">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
                                                                 <color key="backgroundColor" red="0.3387292742328567" green="0.74450913282355879" blue="0.40214737557193447" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vve-p8-qt6">
-                                                        <rect key="frame" x="375" y="0.0" width="187.66666666666663" height="46.333333333333336"/>
+                                                        <rect key="frame" x="214.99999999999997" y="0.0" width="107.66666666666666" height="137.66666666666666"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="%">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
                                                                 <color key="backgroundColor" red="0.3387292742328567" green="0.74450913282355879" blue="0.40214737557193447" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpJ-CD-lWE">
-                                                        <rect key="frame" x="562.66666666666663" y="0.0" width="187.33333333333337" height="46.333333333333336"/>
+                                                        <rect key="frame" x="322.66666666666669" y="0.0" width="107.33333333333331" height="137.66666666666666"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="/">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
                                                                 <color key="backgroundColor" red="0.3387292742328567" green="0.74450913282355879" blue="0.40214737557193447" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ThN-rn-2Xc" userLabel="ButtonRow2">
-                                                <rect key="frame" x="0.0" y="46.333333333333343" width="750" height="46"/>
+                                                <rect key="frame" x="0.0" y="137.66666666666669" width="430" height="138"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5r-jm-RGr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="46"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="138"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="7">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
                                                                 <color key="backgroundColor" systemColor="linkColor"/>
-                                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dk-yh-T5Q">
-                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="46"/>
+                                                        <rect key="frame" x="107.66666666666669" y="0.0" width="107.33333333333331" height="138"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="8">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
                                                                 <color key="backgroundColor" systemColor="linkColor"/>
-                                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEn-P4-QER">
-                                                        <rect key="frame" x="375" y="0.0" width="187.66666666666663" height="46"/>
+                                                        <rect key="frame" x="214.99999999999997" y="0.0" width="107.66666666666666" height="138"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="9">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
                                                                 <color key="backgroundColor" systemColor="linkColor"/>
-                                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQt-PF-PAz">
-                                                        <rect key="frame" x="562.66666666666663" y="0.0" width="187.33333333333337" height="46"/>
+                                                        <rect key="frame" x="322.66666666666669" y="0.0" width="107.33333333333331" height="138"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="*">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
                                                                 <color key="backgroundColor" red="0.34117650989999998" green="0.74509805439999999" blue="0.40000003579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vyJ-5Y-oLy" userLabel="ButtonRow3">
-                                                <rect key="frame" x="0.0" y="92.333333333333343" width="750" height="46.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="275.66666666666669" width="430" height="137.66666666666669"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eF-Qd-AIw">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="46.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="137.66666666666666"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="4">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
                                                                 <color key="backgroundColor" systemColor="linkColor"/>
-                                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0y-gO-aIZ">
-                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="46.333333333333336"/>
+                                                        <rect key="frame" x="107.66666666666669" y="0.0" width="107.33333333333331" height="137.66666666666666"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="5">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
                                                                 <color key="backgroundColor" systemColor="linkColor"/>
-                                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9P-bA-1dP">
-                                                        <rect key="frame" x="375" y="0.0" width="187.66666666666663" height="46.333333333333336"/>
+                                                        <rect key="frame" x="214.99999999999997" y="0.0" width="107.66666666666666" height="137.66666666666666"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="6">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
                                                                 <color key="backgroundColor" systemColor="linkColor"/>
-                                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQE-5C-tFV">
-                                                        <rect key="frame" x="562.66666666666663" y="0.0" width="187.33333333333337" height="46.333333333333336"/>
+                                                        <rect key="frame" x="322.66666666666669" y="0.0" width="107.33333333333331" height="137.66666666666666"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="-">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
                                                                 <color key="backgroundColor" red="0.34117650989999998" green="0.74509805439999999" blue="0.40000003579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CxP-Ty-M5a" userLabel="ButtonRow4">
-                                                <rect key="frame" x="0.0" y="138.66666666666669" width="750" height="46"/>
+                                                <rect key="frame" x="0.0" y="413.33333333333337" width="430" height="138"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySe-mt-cPs">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="46"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="138"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="1">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
                                                                 <color key="backgroundColor" systemColor="linkColor"/>
-                                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccn-7y-YDJ">
-                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="46"/>
+                                                        <rect key="frame" x="107.66666666666669" y="0.0" width="107.33333333333331" height="138"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="2">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
                                                                 <color key="backgroundColor" systemColor="linkColor"/>
-                                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jk1-3A-VBt">
-                                                        <rect key="frame" x="375" y="0.0" width="187.66666666666663" height="46"/>
+                                                        <rect key="frame" x="214.99999999999997" y="0.0" width="107.66666666666666" height="138"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="3">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
                                                                 <color key="backgroundColor" systemColor="linkColor"/>
-                                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRc-u7-gzd">
-                                                        <rect key="frame" x="562.66666666666663" y="0.0" width="187.33333333333337" height="46"/>
+                                                        <rect key="frame" x="322.66666666666669" y="0.0" width="107.33333333333331" height="138"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="+">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
                                                                 <color key="backgroundColor" red="0.34117650989999998" green="0.74509805439999999" blue="0.40000003579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9a5-tH-Dwc" userLabel="ButtonRow5">
-                                                <rect key="frame" x="0.0" y="184.66666666666669" width="750" height="46.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="551.33333333333337" width="430" height="137.66666666666663"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77z-D0-H20">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="46.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="137.66666666666666"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
                                                                 <color key="backgroundColor" systemColor="scrollViewTexturedBackgroundColor"/>
-                                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U67-gL-BWp">
-                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="46.333333333333336"/>
+                                                        <rect key="frame" x="107.66666666666669" y="0.0" width="107.33333333333331" height="137.66666666666666"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="0">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
                                                                 <color key="backgroundColor" systemColor="linkColor"/>
-                                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOs-Xh-f3r">
-                                                        <rect key="frame" x="375" y="0.0" width="187.66666666666663" height="46.333333333333336"/>
+                                                        <rect key="frame" x="214.99999999999997" y="0.0" width="107.66666666666666" height="137.66666666666666"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title=".">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
                                                                 <color key="backgroundColor" red="0.34117650989999998" green="0.74509805439999999" blue="0.40000003579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYD-nf-kmf">
-                                                        <rect key="frame" x="562.66666666666663" y="0.0" width="187.33333333333337" height="46.333333333333336"/>
+                                                        <rect key="frame" x="322.66666666666669" y="0.0" width="107.33333333333331" height="137.66666666666666"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="=">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
                                                                 <color key="backgroundColor" red="0.34117650989999998" green="0.74509805439999999" blue="0.40000003579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
